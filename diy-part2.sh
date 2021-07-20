@@ -22,6 +22,6 @@ git clone --depth=1 https://github.com/OpenWrt-Actions/OpenWrt-Packages/tree/pac
 git clone --depth=1 https://github.com/small-5/luci-app-adblock-plus.git package/luci-app-adblock-plus
 
 ## overclock 1000Mhz--0x312 1100Mhz--0x362 1200Mhz--0x3B2
-sed -i '57s/89/98/' target/linux/ramips/patches-5.10/322-mt7621-fix-cpu-clk-add-clkdev.patch
-sed -i 'N;118 a +\t\tif ((pll & 0x7f0) == 0x2b0) {\n+\t\t\tvolatile u32 i;\n+\n+\t\t\tpr_info("CPU Clock: 880MHz, start overclocking\\n");\n+\t\t\tpll &= ~0x7ff;\n+\t\t\tpll |= 0x362;\n+\t\t\trt_memc_w32(pll, MEMC_REG_CPU_PLL);\n+\t\t\tfor (i = 0; i < 1000; i++);\n+\t\t}' target/linux/ramips/patches-5.10/322-mt7621-fix-cpu-clk-add-clkdev.patch
+#sed -i '57s/89/98/' target/linux/ramips/patches-5.10/322-mt7621-fix-cpu-clk-add-clkdev.patch
+#sed -i 'N;118 a +\t\tif ((pll & 0x7f0) == 0x2b0) {\n+\t\t\tvolatile u32 i;\n+\n+\t\t\tpr_info("CPU Clock: 880MHz, start overclocking\\n");\n+\t\t\tpll &= ~0x7ff;\n+\t\t\tpll |= 0x362;\n+\t\t\trt_memc_w32(pll, MEMC_REG_CPU_PLL);\n+\t\t\tfor (i = 0; i < 1000; i++);\n+\t\t}' target/linux/ramips/patches-5.10/322-mt7621-fix-cpu-clk-add-clkdev.patch
 
