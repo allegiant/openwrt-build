@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwal
 
 # add luci-app-ssr-plus
-git clone --depth=1 https://github.com/OpenWrt-Actions/OpenWrt-Packages/tree/packages/luci-app-ssr-plus package/luci-app-ssr-plus
+# git clone --depth=1 https://github.com/OpenWrt-Actions/OpenWrt-Packages/tree/packages/luci-app-ssr-plus package/luci-app-ssr-plus
 # add luci-app-adblock-plus
 git clone --depth=1 https://github.com/small-5/luci-app-adblock-plus.git package/luci-app-adblock-plus
 
