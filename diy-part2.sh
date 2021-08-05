@@ -20,7 +20,7 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/openwr
 git clone --depth=1 https://github.com/fw876/helloworld package/lean/helloworld
 
 # add luci-app-adblock-plus
-git clone --depth=1 https://github.com/small-5/luci-app-adblock-plus.git package/luci-app-adblock-plus
+git clone --depth=1 https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
 
 ## overclock 1000Mhz--0x312 1100Mhz--0x362 1200Mhz--0x3B2
 sed -i '57s/89/98/' target/linux/ramips/patches-5.10/322-mt7621-fix-cpu-clk-add-clkdev.patch
